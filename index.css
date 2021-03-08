@@ -45,7 +45,7 @@ body {
   background-image: url(photos/630555fda4336e696afee937a0715ce6.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   height: 100vh;
   margin: 2px;
 }
@@ -64,12 +64,17 @@ body {
 	width:23% !important;
 	margin:10px;
 	padding: 8px 10px !important;
+	border: 0px solid black !important;
 }
 
-.list-group-item:hover img{
-	width:105% !important;
-
+.list-group-item .image-wrapper{
+    padding-bottom: 10px;
 }
+
+.list-group-item:hover{
+	padding:0px !important;
+}
+
 
 .list-group-horizontal{
 	width:100% !important;
@@ -78,6 +83,10 @@ body {
 
 .list-group-item a img{
 	width:100% !important;
+}
+
+.list-group-item .descr{
+	text-align:center;
 }
 
 .list-group{
@@ -91,3 +100,14 @@ body {
     padding: 10px;
 }
 
+.list-group-item a{
+	color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar-nav.mr-auto .nav-item:last-child{
+	position: absolute;
+    right: 5px;
+}

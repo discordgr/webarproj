@@ -112,3 +112,8 @@ body {
 	position: absolute;
     right: 5px;
 }
+
+.list-group-item a:visited img{
+	opacity:0.5;
+	
+}

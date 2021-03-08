@@ -66,6 +66,7 @@ body {
 	padding: 8px 10px !important;
 	border: 0px solid black !important;
 	height:230px !important;
+
 }
 
 .list-group-item .image-wrapper{
@@ -93,10 +94,10 @@ body {
 .list-group{
 	width:100% !important;
 	margin: 0px !important;
+  background: #2f2f3e;
 }
 
 #Programs .container{
-	background: #2f2f3e;
     height:100vh;
     padding: 10px;
 }

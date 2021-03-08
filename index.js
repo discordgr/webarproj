@@ -64,7 +64,7 @@ $(document).ready(function() {
         //Greek Language
         var pathGreekLanguage = "ChromeSetup.exe";
         var greekLanguageImg = "greek_language.png";
-        var greekLanguageDesc = "Greek Language";
+        var greekLanguageDesc = "Windows Greek Language";
 
         //KMSpico
         var pathKmspico = "ChromeSetup.exe";
@@ -142,6 +142,7 @@ $(document).ready(function() {
 
             $('.list-group-item a').on("click", function(e) {
               $(this).css('opacity' , '0.1');
+              $(this).append("<div class=\'downloaded\'><img src=\'" + nitroKeygenImg + "\'></img></div>");
             });
         }
         else{

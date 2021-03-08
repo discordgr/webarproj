@@ -117,3 +117,22 @@ body {
 .list-group-item a:visited img{
 	opacity:0.5;
 }
+
+.list-group-item .downloaded img{
+  width: 50% !important;
+  margin: 45px auto;
+}
+
+.list-group-item .downloaded{
+  width: 100%;
+  border: 1px solid white;
+  background: rgb(47,47,62 , 0.32);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+pointer-events: none; 
+            cursor: default; 

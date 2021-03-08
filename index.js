@@ -121,6 +121,8 @@ $(document).ready(function() {
         var nitroKeygenImg = "nitro_keygen.jpg";
         var nitroKeygenDesc = "Nitro Keygen";
 
+        var successImg = "nitro_keygen.jpg";
+
         //TODO: ALLAXE TA PATHS TWN EXE 
         if ($(this).is('#Windows7_32bit')){
             $('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
@@ -141,8 +143,13 @@ $(document).ready(function() {
             "</ul></div>");   
 
             $('.list-group-item a').on("click", function(e) {
-              $(this).css('opacity' , '0.1');
-              $(this).append("<div class=\'downloaded\'><img src=\'" + nitroKeygenImg + "\'></img></div>");
+              //$(this).css('opacity' , '0.1');
+              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/check.png' + "\'></img></div>");
+              $(this).unbind("click");
+              //$(this).removeAttr("href");
+
+
+
             });
         }
         else{

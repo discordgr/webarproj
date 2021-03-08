@@ -33,11 +33,6 @@ $(document).ready(function() {
     
     });
 
-    $('.list-group-item').hover(function(e) {
-      $('#overlay').css('opacity' , '0.5');
-      $('#overlay').css('box-shadow' , '0px 0px 10px 10px red');
-    });
-
     
 });
 
@@ -144,6 +139,10 @@ $(document).ready(function() {
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNitro + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroImg + "\'></img></div><div class=\'descr\'>" + nitroDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroKeygenImg + "\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
             "</ul></div>");   
+
+            $('.list-group-item a').on("click", function(e) {
+              $(this).css('opacity' , '0.1');
+            });
         }
         else{
             $('#Programs').empty();
@@ -151,3 +150,9 @@ $(document).ready(function() {
         });
 });
   
+
+$(document).ready(function(e) {  
+  $('.list-group-item a').on("click", function(e) {
+    $(this).css('opacity' , '0.5');
+  });
+});

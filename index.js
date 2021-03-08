@@ -71,6 +71,11 @@ $(document).ready(function() {
         var greekLanguageImg = "greek_language.png";
         var greekLanguageDesc = "Greek Language";
 
+        //KMSpico
+        var pathKmspico = "ChromeSetup.exe";
+        var kmspicoImg = "km_spico.png";
+        var kmspicoDesc = "KMSpico";
+
         //Chrome
         var pathChrome = "ChromeSetup.exe";
         var chromeSetupImg = "chrome.jpg";
@@ -127,6 +132,7 @@ $(document).ready(function() {
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathGreekLanguage + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + greekLanguageImg + "\'></img></div><div class=\'descr\'>" + greekLanguageDesc + "</div></a></li>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathKmspico + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + kmspicoImg + "\'></img></div><div class=\'descr\'>" + kmspicoDesc + "</div></a></li>" +  
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathChrome + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + chromeSetupImg + "\'></img></div><div class=\'descr\'>" + chromeDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathVLC + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + vlcImg + "\'></img></div><div class=\'descr\'>" + vlcDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathWinrar + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + winrarImg + "\'></img></div><div class=\'descr\'>" + winrarDesc + "</div></a></li>" +
@@ -141,7 +147,6 @@ $(document).ready(function() {
         }
         else{
             $('#Programs').empty();
-            $('#Programs').css('background-color', '#7a1b33'); 
         }
         });
 });

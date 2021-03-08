@@ -45,7 +45,7 @@ body {
   background-image: url(photos/630555fda4336e696afee937a0715ce6.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   height: 100vh;
   margin: 2px;
 }
@@ -90,3 +90,4 @@ body {
     height:100vh;
     padding: 10px;
 }
+

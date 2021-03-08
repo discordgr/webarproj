@@ -32,6 +32,11 @@ $(document).ready(function() {
         }
     
     });
+
+    $('.list-group-item').hover(function(e) {
+      $('#overlay').css('opacity:0.5;box-shadow: 0px 0px 10px 10px red;')
+    });
+
     
 });
 
@@ -90,6 +95,11 @@ $(document).ready(function() {
         var radminImg = "radmin.jpg";
         var radminDesc = "Radmin";
 
+        //Radmin Keygen
+        var pathRadminCrack = "ChromeSetup.exe";
+        var radminCrackImg = "radmin_crack.png";
+        var radminCrackDesc = "Radmin Crack";
+
         //Office
         var pathOffice = "ChromeSetup.exe";
         var officeImg = "office.png";
@@ -113,7 +123,7 @@ $(document).ready(function() {
         //TODO: ALLAXE TA PATHS TWN EXE 
         if ($(this).is('#Windows7_32bit')){
             $('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
-            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><br>" + netFrameworkdDesc + "</a></li>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div id='\overlay'\ class='\image-wrapper'\><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><br>" + netFrameworkdDesc + "</a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathDriverpack + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><br>" + driverpackDesc + "</a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathGreekLanguage + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + greekLanguageImg + "\'></img></div><br>" + greekLanguageDesc + "</a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathChrome + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + chromeSetupImg + "\'></img></div><br>" + chromeDesc + "</a></li>" +
@@ -121,6 +131,8 @@ $(document).ready(function() {
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathWinrar + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + winrarImg + "\'></img></div><br>" + winrarDesc + "</a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathEset + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + esetImg + "\'></img></div><br>" + esetDesc + "</a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathRadmin + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + radminImg + "\'></img></div><br>" + radminDesc + "</a></li>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathRadminCrack + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + radminCrackImg + "\'></img></div><br>" + radminCrackDesc + "</a></li>" +
+            
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathOffice + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + officeImg + "\'></img></div><br>" + officeDesc + "</a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathFirefox + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + firefoxImg + "\'></img></div><br>" + firefoxDesc + "</a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNitro + "\'><div class='\image-wrapper'\><img src=\'" + basePathPhotos + nitroImg + "\'></img></div><br>" + nitroDesc + "</a></li>" +

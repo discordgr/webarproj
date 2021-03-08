@@ -145,12 +145,9 @@ $(document).ready(function() {
             $('.list-group-item a').on("click", function(e) {
               //$(this).css('opacity' , '0.1');
               $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/check.png' + "\'></img></div>");
-              $(this).unbind("click");
-              //$(this).removeAttr("href");
-
-
-
+              $(this).parent().css('pointer-events', 'none');
             });
+           
         }
         else{
             $('#Programs').empty();

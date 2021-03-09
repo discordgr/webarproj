@@ -65,8 +65,8 @@ body {
 	margin:10px 5px;
 	padding: 8px 10px !important;
 	border: 0px solid black !important;
-	height:230px !important;
-	border-radius: 5px !important;
+	height:210px !important;
+	border-radius: 10px !important;
 }
 
 .list-group-item .image-wrapper{
@@ -78,8 +78,8 @@ body {
 }
 
 .list-group-item:hover img{
-	border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+	border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
 }
 
 .list-group-horizontal{

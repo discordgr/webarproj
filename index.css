@@ -100,6 +100,7 @@ body {
 	width:100% !important;
 	margin: 0px !important;
 	background: rgb(47,47,62 , 0.35);
+	border-radius: 10px !important;
 }
 
 #Programs .container{
@@ -125,7 +126,6 @@ body {
 
 .list-group-item .downloaded img{
   width: 50% !important;
-  margin: 45px auto;
 }
 
 .list-group-item .downloaded{
@@ -136,5 +136,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

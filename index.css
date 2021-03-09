@@ -78,8 +78,8 @@ body {
 }
 
 .list-group-item:hover img{
-	border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+	border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .list-group-horizontal{

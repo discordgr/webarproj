@@ -61,12 +61,12 @@ body {
 }
 
 .list-group-item{
-	width:23% !important;
-	margin:10px;
+	width:23.9% !important;
+	margin:10px 5px;
 	padding: 8px 10px !important;
 	border: 0px solid black !important;
 	height:230px !important;
-
+  border-radius: 5px !important;
 }
 
 .list-group-item .image-wrapper{
@@ -77,10 +77,15 @@ body {
 	padding:0px !important;
 }
 
+.list-group-item:hover img{
+	border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
 .list-group-horizontal{
 	width:100% !important;
-	margin: 0px 20px !important;
+	margin: 0px !important;
+  padding:10px !important
 }
 
 .list-group-item a img{

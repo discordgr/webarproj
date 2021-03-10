@@ -144,3 +144,17 @@ body {
 .list-group-item.hidden-check-element{
 	display:none !important;
 }
+
+#breadcrumb{
+	text-align:center;
+}
+
+#breadcrumb h2{
+	color:white;
+	background:black;
+	padding: 15px 0px;
+}
+
+.dropright .dropdown-toggle{
+	width:100%;
+}

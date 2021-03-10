@@ -16,7 +16,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
+			
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
 
@@ -30,15 +30,23 @@
                                 <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">Windows 7 Domain</button>
                                 <div class="dropdown-menu">
                                   <a class="dropdown-item" id="Windows7_32bit" href="#">32-bit</a>
-                                  <a class="dropdown-item" href="Windows7_64bit">64-bit</a>
+                                  <a class="dropdown-item" id="Windows7_64bit" href="#">64-bit</a>
                                 </div>
                             </div>
-                              <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Windows 7</a>
+                            
+							<div class="dropdown-divider"></div>
+							  
+							<div class="dropright">
+                                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown">Windows 7</button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" id="Windows7_32bit_standAlone" href="#">32-bit</a>
+                                  <a class="dropdown-item" id="Windows7_64bit_standAlone" href="#">64-bit</a>
+                                </div>
+                            </div>
+
                         </div>
                       </li>
 
-                    
                 <li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownWindows10" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,6 +81,7 @@
             </div>
           </nav>
 
+		<div id="breadcrumb"> </div>
         <div id="Programs" style="margin:5px;padding:5px;">  </div>
             
     </body>

@@ -32,8 +32,12 @@ $(document).ready(function() {
         }
     
     });
+	
+	$('#homepagelogo').on("click", function(){
+		$('#Programs').empty();
+		$('#breadcrumb').empty();
+	});
 
-    
 });
 
 $(document).ready(function() {

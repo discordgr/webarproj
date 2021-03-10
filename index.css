@@ -140,3 +140,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.list-group-item.hidden-check-element{
+	display:none !important;
+}

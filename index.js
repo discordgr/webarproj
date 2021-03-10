@@ -122,7 +122,7 @@ $(document).ready(function() {
         var nitroKeygenDesc = "Nitro Keygen";
 
         var successImg = "nitro_keygen.jpg";
-
+		
         //TODO: ALLAXE TA PATHS TWN EXE 
         if ($(this).is('#Windows7_32bit')){
             $('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
@@ -140,11 +140,12 @@ $(document).ready(function() {
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathFirefox + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + firefoxImg + "\'></img></div><div class=\'descr\'>" + firefoxDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNitro + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroImg + "\'></img></div><div class=\'descr\'>" + nitroDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroKeygenImg + "\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
-            "</ul></div>");   
+			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
+			"</ul></div>");   
 
             $('.list-group-item a').on("click", function(e) {
               //$(this).css('opacity' , '0.1');
-              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/check.png' + "\'></img></div>");
+              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
               $(this).parent().css('pointer-events', 'none');
             });
            

@@ -266,6 +266,9 @@ $(document).ready(function(e) {
 function clearTitleList(){
 	//Καθαρίζουμε την λίστα πριν την ξαναγεμίσουμε 
 	$('#Programs').empty();
+	
 	//Καθαρίζουμε τον τίτλο πριν βάλουμε τον νέο
 	$('#breadcrumb').empty();
+	$('#Programs').removeClass('fadeIn');
+	$('#Programs').addClass('fadeIn');
 }

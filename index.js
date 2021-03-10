@@ -8,7 +8,7 @@ $(document).ready(function() {
       e.preventDefault();
 
       $(this).slideToggle(150, "linear");
-    });
+    }); 
 
     $('#navbarDropdownWindows10').on("click", function() {
         $('#Windows10Dropdown').slideToggle(300, "linear");
@@ -24,26 +24,29 @@ $(document).ready(function() {
     $('.dropright button').mouseenter(function(e) {
         e.stopPropagation();
         e.preventDefault();
-    
+		$('.dropright button').next('div').removeClass('show');
         if (!$(this).next('div').hasClass('show')) {
           $(this).next('div').addClass('show');
         } else {
           $(this).next('div').removeClass('show');
         }
-    
     });
 	
+	// Επιστρέφει στην αρχική σελίδα μόλις πατιέται το Software Setup
 	$('#homepagelogo').on("click", function(){
-		$('#Programs').empty();
-		$('#breadcrumb').empty();
+		clearTitleList();
+		$('#breadcrumb').append("<h2> Home </h2>");
 	});
 
 });
 
 $(document).ready(function() {
+	$('#breadcrumb').append("<h2> Home </h2>");
+	
     $('.dropdown-item').on("click", function() {
         //Καθαρίζουμε την λίστα πριν την ξαναγεμίσουμε 
-        $('#Programs').empty();
+        clearTitleList();
+		
 
         //Main Directory Setups
         basePathSetups = "setups/";
@@ -139,8 +142,7 @@ $(document).ready(function() {
 		
         //TODO: ALLAXE TA PATHS TWN EXE 
         if ($(this).is('#Windows7_32bit')){
-			$('#Programs').empty();
-			$('#breadcrumb').empty();
+			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 Domain - 32bit </h2>");
             $('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
@@ -168,8 +170,7 @@ $(document).ready(function() {
             });
            
         }else if($(this).is('#Windows7_64bit')){
-			$('#Programs').empty();
-			$('#breadcrumb').empty();
+			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 Domain - 64bit </h2>");
 			$('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit64Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
@@ -197,8 +198,7 @@ $(document).ready(function() {
             });
 			
 		}else if($(this).is('#Windows7_32bit_standAlone')){
-			$('#Programs').empty();
-			$('#breadcrumb').empty();
+			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 - 32bit </h2>");
             $('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
@@ -223,8 +223,7 @@ $(document).ready(function() {
             });
 			
 		}else if($(this).is('#Windows7_64bit_standAlone')){
-			$('#Programs').empty();
-			$('#breadcrumb').empty();
+			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 - 64bit </h2>");
 			$('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit64Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
@@ -260,3 +259,13 @@ $(document).ready(function(e) {
     $(this).css('opacity' , '0.5');
   });
 });
+
+
+
+// Συνάρτηση που καλείται για το άδειασμα της λίστας προγραμμάτων και του τίτλου
+function clearTitleList(){
+	//Καθαρίζουμε την λίστα πριν την ξαναγεμίσουμε 
+	$('#Programs').empty();
+	//Καθαρίζουμε τον τίτλο πριν βάλουμε τον νέο
+	$('#breadcrumb').empty();
+}

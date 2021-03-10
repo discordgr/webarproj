@@ -35,13 +35,13 @@ $(document).ready(function() {
 	// Επιστρέφει στην αρχική σελίδα μόλις πατιέται το Software Setup
 	$('#homepagelogo').on("click", function(){
 		clearTitleList();
-		$('#breadcrumb').append("<h2> Home </h2>");
+		//$('#breadcrumb').append("<h2> Home </h2>");
 	});
 
 });
 
 $(document).ready(function() {
-	$('#breadcrumb').append("<h2> Home </h2>");
+	//$('#breadcrumb').append("<h2> Home </h2>");
 	
     $('.dropdown-item').on("click", function() {
         //Καθαρίζουμε την λίστα πριν την ξαναγεμίσουμε 

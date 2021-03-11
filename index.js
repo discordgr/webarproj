@@ -319,9 +319,9 @@ $(document).ready(function() {
         });		
     });
 	
-	$('#Windows10Server').on("click", function() {
+	$('#WindowsServer').on("click", function() {
 		clearTitleList();
-		$('#breadcrumb').append("<h2>Windows Server  </h2>");
+		$('#breadcrumb').append("<h2>Windows Server</h2>");
 		$('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathOffice + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + officeImg + "\'></img></div><div class=\'descr\'>" + officeDesc + "</div></a></li>" +

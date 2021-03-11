@@ -147,7 +147,6 @@ $(document).ready(function() {
 			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 Domain - 32bit </h2>");
             $('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
-            "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathGreekLanguage + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + greekLanguageImg + "\'></img></div><div class=\'descr\'>" + greekLanguageDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathOffice + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + officeImg + "\'></img></div><div class=\'descr\'>" + officeDesc + "</div></a></li>" +
@@ -165,11 +164,6 @@ $(document).ready(function() {
 			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
 			"</ul></div>");   
 
-            $('.list-group-item a').on("click", function(e) {
-              //$(this).css('opacity' , '0.1');
-              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
-              $(this).parent().css('pointer-events', 'none');
-            });
            
         }else if($(this).is('#Windows7_64bit')){
 			clearTitleList();
@@ -193,11 +187,6 @@ $(document).ready(function() {
 			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit64Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
 			"</ul></div>");   
 
-            $('.list-group-item a').on("click", function(e) {
-              //$(this).css('opacity' , '0.1');
-              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
-              $(this).parent().css('pointer-events', 'none');
-            });
 			
 		}else if($(this).is('#Windows7_32bit_standAlone')){
 			clearTitleList();
@@ -218,11 +207,6 @@ $(document).ready(function() {
 			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
 			"</ul></div>");   
 
-            $('.list-group-item a').on("click", function(e) {
-              //$(this).css('opacity' , '0.1');
-              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
-              $(this).parent().css('pointer-events', 'none');
-            });
 			
 		}else if($(this).is('#Windows7_64bit_standAlone')){
 			clearTitleList();
@@ -243,11 +227,6 @@ $(document).ready(function() {
 			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit64Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
 			"</ul></div>");   
 
-            $('.list-group-item a').on("click", function(e) {
-              //$(this).css('opacity' , '0.1');
-              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
-              $(this).parent().css('pointer-events', 'none');
-            });	
 			
 		}else if($(this).is('#Windows10_32bit')){
 			clearTitleList();
@@ -271,14 +250,17 @@ $(document).ready(function() {
 			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
 			"</ul></div>");   
 
-            $('.list-group-item a').on("click", function(e) {
-              //$(this).css('opacity' , '0.1');
-              $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
-              $(this).parent().css('pointer-events', 'none');
-            });
+            
 		}else{
             $('#Programs').empty();
         }
+		
+		$('.list-group-item a').on("click", function(e) {
+            //$(this).css('opacity' , '0.1');
+            $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
+            $(this).parent().css('pointer-events', 'none');
+        });
+			
         });
 });
   

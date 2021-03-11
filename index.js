@@ -344,12 +344,12 @@ $(document).ready(function() {
 
     //Radmin Viewer + crack
     var pathRadminViewer = "ChromeSetup.exe";
-    var radminViewerImg = "radminViewer.jpg";
+    var radminViewerImg = "radminviewer.png";
     var radminViewerDesc = "Radmin Viewer";
 
     //Adobe Photoshop 
     var pathAdobePhotoshop = "ChromeSetup.exe";
-    var adobePhotoshopImg = "adobePhotoshop.jpg";
+    var adobePhotoshopImg = "adobephotoshop.jpg";
     var adobePhotoshopDesc = "Adobe Photoshop";
 
     //Abby + crack
@@ -357,10 +357,10 @@ $(document).ready(function() {
     var abbyImg = "abby.jpg";
     var abbyDesc = "Abby";
     
-    //FIlezilla client
+    //Filezilla client
     var pathFilezilla = "ChromeSetup.exe";
-    var filezillaImg = "filezilla.jpg";
-    var filezillaDesc = "FIlezilla Client";
+    var filezillaImg = "filezilla.png";
+    var filezillaDesc = "Filezilla Client";
 
     //Administrator tools
     var pathAdministratorTools = "ChromeSetup.exe";

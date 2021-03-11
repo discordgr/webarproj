@@ -236,7 +236,7 @@ $(document).ready(function() {
 			
 		}else if($(this).is('#Windows10_32bit')){
 			clearTitleList();
-			$('#breadcrumb').append("<h2>Windows 10 - 32bit </h2>");
+			$('#breadcrumb').append("<h2>Windows 10 Domain - 32bit </h2>");
             $('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathOffice + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + officeImg + "\'></img></div><div class=\'descr\'>" + officeDesc + "</div></a></li>" +
@@ -256,7 +256,7 @@ $(document).ready(function() {
 			"</ul></div>");   
 		}else if($(this).is('#Windows10_64bit')){
 			clearTitleList();
-			$('#breadcrumb').append("<h2>Windows 10 - 64bit </h2>");
+			$('#breadcrumb').append("<h2>Windows 10 Domain - 64bit </h2>");
             $('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathOffice + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + officeImg + "\'></img></div><div class=\'descr\'>" + officeDesc + "</div></a></li>" +
@@ -273,7 +273,24 @@ $(document).ready(function() {
 			"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathNitro + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroImg + "\'></img></div><div class=\'descr\'>" + nitroDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroKeygenImg + "\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
 			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit64Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
-			"</ul></div>"); 	
+			"</ul></div>");
+		}else if($(this).is('#Windows10_32bit_standAlone')){
+			clearTitleList();
+			$('#breadcrumb').append("<h2>Windows 10 - 32bit </h2>");
+            $('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathOffice + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + officeImg + "\'></img></div><div class=\'descr\'>" + officeDesc + "</div></a></li>" +
+			"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathOfficeGreek + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + officeGreekImg + "\'></img></div><div class=\'descr\'>" + officeGreekDesc + "</div></a></li>" +
+			"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathKmspico + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + kmspicoImg + "\'></img></div><div class=\'descr\'>" + kmspicoDesc + "</div></a></li>" +  
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathChrome + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + chromeSetupImg + "\'></img></div><div class=\'descr\'>" + chromeDesc + "</div></a></li>" +
+			"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathVLC + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + vlcImg + "\'></img></div><div class=\'descr\'>" + vlcDesc + "</div></a></li>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathWinrar + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + winrarImg + "\'></img></div><div class=\'descr\'>" + winrarDesc + "</div></a></li>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathFirefox + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + firefoxImg + "\'></img></div><div class=\'descr\'>" + firefoxDesc + "</div></a></li>" +
+			"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathAcrobat + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + AcrobatImg + "\'></img></div><div class=\'descr\'>" + AcrobatDesc + "</div></a></li>" +
+			"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNitro + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroImg + "\'></img></div><div class=\'descr\'>" + nitroDesc + "</div></a></li>" +
+            "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + nitroKeygenImg + "\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
+			"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit32Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
+			"</ul></div>");   
 		}else{
             $('#Programs').empty();
         }

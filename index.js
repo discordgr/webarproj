@@ -327,13 +327,19 @@ $(document).ready(function() {
 		$('#breadcrumb').append("<h2>Windows Server</h2>");
 		$('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathActivator + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + activatorImg + "\'></img></div><div class=\'descr\'>" + activatorDesc + "</div></a></li>" +		
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathWinrar + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + winrarImg + "\'></img></div><div class=\'descr\'>" + winrarDesc + "</div></a></li>" +
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathFirefox + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + firefoxImg + "\'></img></div><div class=\'descr\'>" + firefoxDesc + "</div></a></li>" +
         "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathRadmin + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + radminImg + "\'></img></div><div class=\'descr\'>" + radminDesc + "</div></a></li>" +		
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathEset + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + esetImg + "\'></img></div><div class=\'descr\'>" + esetDesc + "</div></a></li>" +
-		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathActivator + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + activatorImg + "\'></img></div><div class=\'descr\'>" + activatorDesc + "</div></a></li>" +		
 		"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + bit64Path + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
 		"</ul></div>");
+		
+		$('.list-group-item a').on("click", function(e) {
+            //$(this).css('opacity' , '0.1');
+            $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
+            $(this).parent().css('pointer-events', 'none');
+        });		
 	});
 }); 
 	

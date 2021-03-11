@@ -37,6 +37,7 @@ $(document).ready(function() {
 		clearTitleList();
 		//$('#breadcrumb').append("<h2> Home </h2>");
 	});
+	
 
 });
 
@@ -45,7 +46,7 @@ $(document).ready(function() {
 	
     $('.dropdown-item').on("click", function() {
         //Καθαρίζουμε την λίστα πριν την ξαναγεμίσουμε 
-        clearTitleList();
+       // clearTitleList();
 		
 
         //Main Directory Setups
@@ -140,11 +141,12 @@ $(document).ready(function() {
 
         var successImg = "nitro_keygen.jpg";
 		
+		
         //TODO: ALLAXE TA PATHS TWN EXE 
         if ($(this).is('#Windows7_32bit')){
 			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 Domain - 32bit </h2>");
-            $('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
+            $('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathGreekLanguage + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + greekLanguageImg + "\'></img></div><div class=\'descr\'>" + greekLanguageDesc + "</div></a></li>" +
@@ -172,7 +174,7 @@ $(document).ready(function() {
         }else if($(this).is('#Windows7_64bit')){
 			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 Domain - 64bit </h2>");
-			$('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
+			$('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit64Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathGreekLanguage + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + greekLanguageImg + "\'></img></div><div class=\'descr\'>" + greekLanguageDesc + "</div></a></li>" +
@@ -200,7 +202,7 @@ $(document).ready(function() {
 		}else if($(this).is('#Windows7_32bit_standAlone')){
 			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 - 32bit </h2>");
-            $('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
+            $('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit32Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathGreekLanguage + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + greekLanguageImg + "\'></img></div><div class=\'descr\'>" + greekLanguageDesc + "</div></a></li>" +
@@ -225,7 +227,7 @@ $(document).ready(function() {
 		}else if($(this).is('#Windows7_64bit_standAlone')){
 			clearTitleList();
 			$('#breadcrumb').append("<h2>Windows 7 - 64bit </h2>");
-			$('#Programs').append("<div class='\container'\><ul class='\list-group list-group-horizontal row'\>" +
+			$('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
             "<li class=\'list-group-item\ id=\'overlay\'><a href=\'" + basePathSetups + bit64Path + pathNetFramework + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + netFrameworkImg + "\'></img></div><div class=\'descr\'>" + netFrameworkdDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
             "<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathGreekLanguage + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + greekLanguageImg + "\'></img></div><div class=\'descr\'>" + greekLanguageDesc + "</div></a></li>" +
@@ -266,9 +268,6 @@ $(document).ready(function(e) {
 function clearTitleList(){
 	//Καθαρίζουμε την λίστα πριν την ξαναγεμίσουμε 
 	$('#Programs').empty();
-	
 	//Καθαρίζουμε τον τίτλο πριν βάλουμε τον νέο
-	$('#breadcrumb').empty();
-	$('#Programs').removeClass('fadeIn');
-	$('#Programs').addClass('fadeIn');
+	$('#breadcrumb').empty();	
 }

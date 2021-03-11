@@ -171,6 +171,6 @@ body {
 
 .fadeIn{
 	animation-name: example;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-delay: 0s;
 }

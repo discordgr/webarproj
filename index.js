@@ -325,7 +325,7 @@ $(document).ready(function() {
 	$('#WindowsServer').on("click", function() {
 		clearTitleList();
 		$('#breadcrumb').append("<h2>Windows Server</h2>");
-		$('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
+		$('#Programs').append("<div class=\'container fadeIn\'><ul class=\'list-group list-group-horizontal row\'>" +
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathDriverpack + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + driverpackImg + "\'></img></div><div class=\'descr\'>" + driverpackDesc + "</div></a></li>" +
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit32Path + pathActivator + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + activatorImg + "\'></img></div><div class=\'descr\'>" + activatorDesc + "</div></a></li>" +		
 		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + bit64Path + pathWinrar + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + winrarImg + "\'></img></div><div class=\'descr\'>" + winrarDesc + "</div></a></li>" +
@@ -340,9 +340,67 @@ $(document).ready(function() {
             $(this).first().append("<div class=\'downloaded\'><img src=\'"+ 'photos/checktransparent.png' + "\'></img></div>");
             $(this).parent().css('pointer-events', 'none');
         });		
-	});
-}); 
-	
+	});	
+
+    //Radmin Viewer + crack
+    var pathRadminViewer = "ChromeSetup.exe";
+    var radminViewerImg = "radminViewer.jpg";
+    var radminViewerDesc = "Radmin Viewer";
+
+    //Adobe Photoshop 
+    var pathAdobePhotoshop = "ChromeSetup.exe";
+    var adobePhotoshopImg = "adobePhotoshop.jpg";
+    var adobePhotoshopDesc = "Adobe Photoshop";
+
+    //Abby + crack
+    var pathAbby = "ChromeSetup.exe";
+    var abbyImg = "abby.jpg";
+    var abbyDesc = "Abby";
+    
+    //FIlezilla client
+    var pathFilezilla = "ChromeSetup.exe";
+    var filezillaImg = "filezilla.jpg";
+    var filezillaDesc = "FIlezilla Client";
+
+    //Administrator tools
+    var pathAdministratorTools = "ChromeSetup.exe";
+    var admininstratorToolsImg = "admintools.jpg";
+    var admininstratorToolsDesc = "Administrator Tools";
+
+    //Second Copy
+    var pathSecondCopy = "ChromeSetup.exe";
+    var secondCopyImg = "second_copy.jpg";
+    var secondCopyDesc = "Second Copy";
+
+    //Total Network Inventory + Crack
+    var pathTotalNetworkInventory = "ChromeSetup.exe";
+    var totalNetworkInventoryImg = "total_network_inventory.jpg";
+    var totalNetworkInventoryDesc = "Total Network Inventory";    
+
+    //VM Workstation
+    var pathvmWorkstation = "ChromeSetup.exe";
+    var vmWorkstationImg = "vmworkstation.jpg";
+    var vmworkstationDesc = "VM Workstation";
+
+
+    $('#cis').on("click", function() {
+		clearTitleList();
+		$('#breadcrumb').append("<h2>CIS Software</h2>");
+		$('#Programs').append("<div class='\container fadeIn'\><ul class='\list-group list-group-horizontal row'\>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathRadminViewer + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + radminViewerImg + "\'></img></div><div class=\'descr\'>" + radminViewerDesc + "</div></a></li>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathAdobePhotoshop + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + adobePhotoshopImg + "\'></img></div><div class=\'descr\'>" + adobePhotoshopDesc + "</div></a></li>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathAbby + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + abbyImg + "\'></img></div><div class=\'descr\'>" + abbyDesc + "</div></a></li>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathFilezilla + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + filezillaImg + "\'></img></div><div class=\'descr\'>" + filezillaDesc + "</div></a></li>" +  
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathAdministratorTools + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + admininstratorToolsImg + "\'></img></div><div class=\'descr\'>" + admininstratorToolsDesc + "</div></a></li>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathSecondCopy + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + secondCopyImg + "\'></img></div><div class=\'descr\'>" + secondCopyDesc + "</div></a></li>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathTotalNetworkInventory + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + totalNetworkInventoryImg + "\'></img></div><div class=\'descr\'>" + totalNetworkInventoryDesc + "</div></a></li>" +
+		"<li class=\'list-group-item\'><a href=\'" + basePathSetups + pathvmWorkstation + "\'><div class=\'image-wrapper\'><img src=\'" + basePathPhotos + vmWorkstationImg + "\'></img></div><div class=\'descr\'>" + vmworkstationDesc + "</div></a></li>" +
+		"<li class=\'list-group-item hidden-check-element\'><a href=\'" + basePathSetups + pathNitroKeygen + "\'><div class=\'image-wrapper\'><img src=\'photos/checktransparent.png\'></img></div><div class=\'descr\'>" + nitroKeygenDesc + "</div></a></li>" +
+		"</ul></div>");
+	});    
+});
+  
+
 $(document).ready(function(e) {  
   $('.list-group-item a').on("click", function(e) {
     $(this).css('opacity' , '0.5');

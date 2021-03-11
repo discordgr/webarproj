@@ -173,3 +173,13 @@ body {
 	animation-duration: 1.5s;
 	animation-delay: 0s;
 }
+
+#credits{
+	background-color:black;
+	color:white;
+	font-size:14px;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding: 10px 5px;
+}
